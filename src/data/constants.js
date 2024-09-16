@@ -308,7 +308,7 @@ export const projects = [
       description:
         "Explore my sleek portfolio, built with HTML5, CSS3, JavaScript, and React.js. Discover my skills and projects through seamless design and interactivity, optimized for any device.",
       image:
-        "portfolio-logo.png",
+        "image.png",
       tags: [
         "HTML5",
         "CSS3",
