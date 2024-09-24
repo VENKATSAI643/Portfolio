@@ -1,7 +1,6 @@
 import './index.css';
 import React from "react";
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const Nav = styled.div`
@@ -33,21 +32,7 @@ const NavContainer = styled.div`
     transition: all 0.3s ease;
 `;
 
-const NavLogo = styled(LinkR)`
-    color: #000; // Changed text color to black for better visibility
-    font-size: 1.5rem;
-    font-weight: 500;
-    width: 80%;
-    padding: 0 6px;
-    display: flex;
-    align-items: center;
-    justify-self: flex-start;
-    cursor: pointer;
-    text-decoration: none;
-    @media screen and(max-width: 640px) {
-        padding: 0px;
-    }
-`;
+
 
 const MobileIcon = styled.div`
     display: none;
@@ -208,9 +193,6 @@ const Navbar = () => {
     return (
         <Nav>
             <NavContainer className={isScroll ? "scrolled" : ""}>
-                <NavLogo>
-                    Sai
-                </NavLogo>
 
                 <MobileIcon>
                     <FaBars onClick={() => { setIsOpen(!isOpen) }}></FaBars>
@@ -221,6 +203,7 @@ const Navbar = () => {
                     <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#projects">Projects</NavLink>
                     <NavLink href="#education">Education</NavLink>
+                    <NavLink href="#experience">Experience</NavLink>
                 </NavItems>
 
                 <ButtonContainer>
@@ -235,6 +218,7 @@ const Navbar = () => {
                         <MobileLink href="#skills" onClick={() => setIsOpen(!isOpen)}>Skills</MobileLink>
                         <MobileLink href="#projects" onClick={() => setIsOpen(!isOpen)}>Projects</MobileLink>
                         <MobileLink href="#education" onClick={() => setIsOpen(!isOpen)}>Education</MobileLink>
+                        <MobileLink href="#experience" onClick={() => setIsOpen(!isOpen)}>Experience</MobileLink>
                         <MobileButtonContainer isOpen={isOpen}>
                             <MobileButton href="https://drive.google.com/file/d/1S0U-9eWkg6DhXl_Atlytp2PHUPBwH6BF/view?usp=sharing" target='blank'>Resume</MobileButton>
                             <MobileButton href="https://github.com/VENKATSAI643" target="blank">Github</MobileButton>

@@ -4,6 +4,7 @@ import { projects } from "../../data/constants"; // Ensure projects have categor
 import ProjectCard from "../Cards/ProjectCard";
 
 const Container = styled.div`
+    margin-top:2%;
     display: flex;
     flex-direction: column;
     justify-content: center;

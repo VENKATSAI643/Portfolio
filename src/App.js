@@ -10,6 +10,7 @@ import Skills from './components/Skills'
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 
 
 const Body = styled.div `
@@ -35,6 +36,7 @@ function App() {
             <Skills/>
             <Projects/>
             <Education/>
+            <Experience/>
           </Wrapper>
 
           <Footer/>

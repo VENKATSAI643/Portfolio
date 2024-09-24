@@ -9,7 +9,6 @@ export const Bio = {
     resume: "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/kancherla-venkat-sai",
 };
-  
 export const skills = [
     {
       title: "Programming Languages",
@@ -153,108 +152,62 @@ export const skills = [
 ];
   
 export const experiences = [
-    {
-      id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-      role: "DevOps & Fullstack Engineering Intern",
-      company: "Flipr Inovations Pvt. Ltd.",
-      date: "Aug 2023 - July 2023",
-      desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
-      skills: [
-        "Docker",
-        "Terraform",
-        "AWS",
-        "EC2",
-        "Portainer",
-        "Nginx",
-        "JavaScript",
-        "TypeScript",
-        "Node Js",
-        " Next Js",
-      ],
-      doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-    },
-    {
-      id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-      role: "Frontend Engineer Intern",
-      company: "Neurobit",
-      date: "June 2023 - Present",
-      desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "NodeJs",
-        "Material UI",
-        "HTML",
-        "CSS",
-        "JavaScript",
-      ],
-      doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-    },
-    {
-      id: 1,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-      role: "Fullstack Externship",
-      company: "Flipr",
-      date: "June 2023 - July 2023",
-      desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "NodeJs",
-        "Material UI",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Docker",
-        "AWS",
-        "MongoDB",
-      ],
-    },
-    {
-      id: 2,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-      role: "Open Source Contributor ",
-      company: "GirlScript Summer of Code",
-      date: "May 2023 - Present",
-      desc: "Contributing to different open-source projects and learn from industry experts",
-      doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-    },
-    {
-      id: 3,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-      role: "Android Developer",
-      company: "DSC KIIT",
-      date: "Nov2021 - Present",
-      desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-      skills: [
-        "Leadership",
-        "Mobile Application Development",
-        "Kotlin",
-        "XML",
-        "Figma",
-      ],
-    },
-    {
-      id: 4,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-      role: "Android Developer Intern",
-      company: "Rudraksha Welffare Foundation",
-      date: "June 2021 - Oct 2021",
-      desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-      skills: [
-        "Android",
-        "Java",
-        "Kotlin",
-        "XML",
-        "Node Js",
-        "Cloud Firestore",
-        "Firebase",
-        "Figma",
-      ],
-      doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-    },
+  {
+    id: 0,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX5mko0xnQlyX5GqrrZYZc-a3FDYgLz85gzcqDcbRqolAJI52zBbMyZzEzAwWPv5fKp4&usqp=CAU", // replace with your image URL
+    role: "Technical Team Member",
+    company: "MVSREC AIMER",
+    date: "Feb 2024 - Present", // replace with your actual start date
+    desc: "As a technical team member in MVSREC AIMER, I contributed to a project focused on image segmentation using the U-Net architecture. Our objective was to accurately perform pixel-level classification to separate objects from the background in images, which is crucial in applications like medical image analysis.",
+    skills: [
+      "Python",
+      "Image Processing",
+      "Deep Learning",
+      "Image Processing",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "Computer Vison",
+      "Data Augmentation"
+    ],
+  },  
+  {
+    id: 1,
+    img: "https://avatars.githubusercontent.com/u/143530374?s=280&v=4", // replace with your image URL
+    role: "Cloud Open Source Co-Lead",
+    company: "GDSC MVSREC",
+    date: "Aug 23 - Present", // replace with your actual start date
+    desc: "As Cloud Open Source Co-Lead at GDSC MVSREC , I took on the responsibility of mentoring a group of 10-15 students during Google Cloud study jams. In this role, I provided direct assistance to students as they worked through assignments and tasks, helping them understand complex concepts and technologies related to cloud computing",
+    skills: [
+      "Cloud Computing",
+      "Open Source",
+      "Google Cloud Platform",
+      "Collaboration",
+      "Mentorship",
+      "Community Engagement",
+    ],
+  }
+,  
+{
+  id: 1,
+  img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAADICAMAAAD7nnzuAAAAulBMVEX////xVyLxVR7xUhfxUBPxWSXxXzH+9fH2m4D1iWnwTQj4uKr/9/H2kGzwTAP6xrP+6uDzajz0inDzbDj1iWTwQADxXCvwRgDwTQD4sqT5t5794NL708v//fn2il/yYyX0eUX/8ufzcUbyXR34r5v3oID729X2mXn959z3qJf96+j6xrn1kXP0hGD5v6/2oIjze1j82cv70L34rpLyWw34t6XzcD392cP0eFH6w6v1glf4qYzzbET71852fOCrAAAElklEQVR4nO2caXeiMBSGk5DqNCrq2AK1MtVuWpcuWu0yM///bw0SXIoWiSMHgu/zZeZ4c3L6wCVkISEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAUxUOQtsQeFAfDunVyCKzC6LGfto4KxQfL4exQGA4b6qPfKghGDwnj9DFtqZhM+WHVfX3nKW2tWDwe+LYHmA9pi8XgniXi7tkP0lbbzbORjDtl9cy/9gZmQu6Uitu05XaR2I3X4Nb3TxJ64uc492nrRdNyknPPfN5PRYLyfJi2XjRPPEF54zRtvWh+hOW58NnSDDIZUegS6SZ/cnsxp3S6kRGsfiFpxLbXTZ43g8BNWNG+lIFx/FZCN3kqXmTgxQ79fid/72xclRzJs1lZRrpfIuzKlT+PFFpI7eQp78qI++UW20FCNFV6w/rJU1GVofFa/2dxRS4NlQ6hhvLMqslYZRlbJH35WmkkoKE85SMZK1uL2+wESX+n1h/UUZ6KiQxWg+Ai6RXecvrKMx6802Xis4JM+o6lOALUUp6yxrquGMuyZ6rjAD3ll4le9RKdV+T/m8oDQE3lqb2826whez099QluXeWZkMq1Gye4DPHHM9rLU+NTFvgIkl7xLae3PLWb6+XC45ycy1O7tyrmOvvMc2oszxqrYp97TXBrLL8cwnsP/j5Jr7c8XTT0PYcZ89k71Zed1vKLiY0KN06bHhPF/q3e8kH/5swQpfm/bv2o5OVi20K+DHnIQx7ykIc85CEP+ZzJuwVzO998sZAjeXfiVC6qW3m8bdtbKtJcXk7f+/K914kbUVGna27cfa3lqfXLp8BEqeb0dlRV3Rju6y1PDR9G+fRml/uWz9o0l195TGJUNgrN9OVF3gme99pWOjL4EvqcMyfywRJG7/2bXUVD/9oUQ6s6OZEPvqIdiW/2FNkyHvqEOy/yO3p4xplf28/jlJcrepCHPOQhn2Eg/z/ywuRHKM/8nZjmPfkQRyfPZu15Z9ZskaYwTX4s8n531rQvSdMU3Pbk7be3q6Po4Xm5Pmtb7drbXL7QbPK5PCFHIW/NGrRHHtqkc+7JX5PyzfHIF7qk76zJu8cmb0I+LJ/n1p7/9ktXhqRvr+RnbvnVkz8n5NXfl+O+53Imh8380sUx6T/XSKlLyu89Uh26xdE9qT4T8uGH+1e5lKd2J0Zl1dC+s7zIL3YfRFG+DnX98yJPzfHuuvK6aEGZU42uyb3bOIQhN/LeY392GVHReLa5GyFH8tSwr35VtvMpNtdo8yXv5b5cuLTPV5jBUubWq5Ur+cBpve37HVFB1uWj/vZvYLS8VsFHxMajrMuX9tk09bJWwSTi6mX9qJi/exwSxJi1Iur7LDFNWy+avurm4EB/SVQxkfHjochpggeD/Yn6gikLJHg4lpPxo7GI2vEnSmT+RDiPHk3mUDgmWmmrxWCgdAJKbHcNkn7OgB++0WNCh8NP5/ytbxuW/Je6pcHRpwHFaeGAxz1z5+Qp+23dGm7r6bpwGP4MB1qpAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD04B/1b3J7vDcDpwAAAABJRU5ErkJggg==",
+  role: "Intern",
+  company: "YBI Foundation",
+  date: "Feb 24 - Apr 24", // replace with your actual start and end dates
+  desc: "Worked as an intern for 3 months, during which I built a vehicle counting project using computer vision techniques, implementing algorithms to accurately track and count vehicles in real-time.",
+  skills: [
+    "Computer Vision",
+    "OpenCV",
+    "Python",
+    "Deep Learning",
+    "TensorFlow",
+    "Image Processing",
+    "Data Analysis",
+    "Machine Learning",
+    "Object Detection",
+  ],
+}
+
 ];
   
 export const education = [
