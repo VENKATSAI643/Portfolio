@@ -289,6 +289,18 @@ export const education = [
   
 export const projects = [
     {
+      "id": 9,
+      "title": "License Plate Recognition",
+      "description": "Developed a robust license plate recognition system utilizing YOLOv9 for object detection and TrOCR for text recognition. The model accurately identifies license plates in diverse conditions, achieving high precision and recall rates. Implemented techniques to enhance image processing and text extraction, making it effective for real-time applications.",
+      "image": "license_plate_recognition_pic.png",
+      "tags": [
+        "YOLOv9",
+        "TrOCR"
+      ],
+      "category": "Deep Learning",
+      "github": "https://github.com/VENKATSAI643"
+    },
+    {
       id: 9,
       title: "Image Segmentation",
       description:
@@ -350,20 +362,6 @@ export const projects = [
     },
 
     {
-      id: 9,
-      title: "Netflix movie recommendation",
-      description:
-        "Engineered a personalized movie recommendation system inspired by Netflix's algorithmic approach. Leveraging collaborative filtering techniques and content-based filtering, the system analyzes user preferences and historical viewing patterns to suggest tailored movie recommendations.",
-      image:
-        "netflix.png",
-      tags: [
-        "Matrix Factorization",
-      ],
-      category: "Machine learning",
-      github: "https://github.com/VENKATSAI643",
-    },
-
-    {
       id:9,
       title:"Result Website",
       description:
@@ -376,7 +374,7 @@ export const projects = [
         "Api Gateway",
         "Lambda Function",
       ],
-      category:"web development",
+      category:"web app",
       github:"https://github.com/VENKATSAI643",
     }
 ];

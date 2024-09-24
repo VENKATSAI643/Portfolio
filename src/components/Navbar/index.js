@@ -1,129 +1,129 @@
 import './index.css';
-import React from "react"
+import React from "react";
 import styled from "styled-components";
-import {Link as LinkR} from "react-router-dom";
-import {FaBars} from "react-icons/fa";
+import { Link as LinkR } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 const Nav = styled.div`
-    background-color : ${({theme})=> theme.card_light};
-    height : 70px;
-    display : flex;
-    justify-content : center;
-    align-item : center;
-    font-size : 1rem;
-    @media screen and (max-width : 960px) {
-        transition : 0.8s all ease;
+    background-color: white; // Changed to white
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center; // Fixed from align-item to align-items
+    font-size: 1rem;
+    @media screen and (max-width: 960px) {
+        transition: 0.8s all ease;
     }
 `;
 
 const NavContainer = styled.div`
-    background-color : ${({theme})=> theme.card_light};
-    display : flex;
-    justify-content : space-between;
-    align-items : center;
-    height : 55px;
-    border-radius : 0.8rem;
-    z-index : 1;
-    width : 100%;
-    padding : 0 24px;
-    max-width : 1200px;
-    position : fixed;
-    top : 0;
-    z-index : 10;
+    background-color: white; // Changed to white
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    border-radius: 0.8rem;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     transition: all 0.3s ease;
 `;
 
 const NavLogo = styled(LinkR)`
-    color : #fff;
-    font-size : 1.5rem;
-    font-weight : 500;
-    width : 80%;
-    padding : 0 6px;
-    display : flex;
-    align-items : center;
-    justify-self : flex-start;
-    cursor : pointer;
-    text-decoration : none;
-    @media screen and(max-width : 640px) {
-        padding : 0px;
+    color: #000; // Changed text color to black for better visibility
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 80%;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    @media screen and(max-width: 640px) {
+        padding: 0px;
     }
 `;
 
 const MobileIcon = styled.div`
-    display : none;
-    @media screen and (max-width : 768px) {
-        display : block;
-        position : absolute;
-        top : 0;
-        right : 0;
-        font-size : 1.5rem;
-        cursor : pointer;
-        transform : translate(-100%, 50%);
-        cursor : pointer;
-        color : ${({theme})=>theme.text_primary};
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transform: translate(-100%, 50%);
+        cursor: pointer;
+        color: ${({ theme }) => theme.text_primary};
     }
 `;
 
 const NavItems = styled.ul`
-    width : 100%;
-    display : flex;
-    justify-content : center;
-    gap : 32px;
-    align-items : center;
-    list-style : none;
-    @media screen and (max-width : 768px) {
-        display : none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 `;
 
 const NavLink = styled.a`
-    color : ${({theme})=>theme.text_primary};
-    font-size : 1.25rem;
-    font-weight : 500;
-    cursor : pointer;
-    text-decoration : none;
-    transition : all 0.2s ease-in-out;
+    color: ${({ theme }) => theme.text_primary};
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
     &:hover {
-        color : ${({theme})=>theme.primary};
+        color: ${({ theme }) => theme.primary};
     }
 `;
 
 const ButtonContainer = styled.div`
-    display : flex;
-    justify-content : end;
-    align-items : center;
-    width : 80%;
-    height : 100%;
-    padding : 0 6px;
-    
-    @media screen and (max-width : 768px) {
-        display : none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding: 0 6px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 `;
 
 const Button = styled.a`
-  border : 1.8px solid ${({theme})=>theme.primary};
-  color : ${({theme})=>theme.primary};
-  background-color : transparent;
-  text-decoration : none;
-  border-radius : 20px;
-  display : flex;
-  justify-content : center;
-  align-items : center;
-  padding : 0 15px;
-  font-size : 1.1rem;
-  font-weight : 500;
-  cursor : pointer;
-  height : 70%;
-  margin-right : 0.5rem;
-  
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primary};
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  height: 70%;
+  margin-right: 0.5rem;
+
   :hover {
-    background-color : ${({theme})=>theme.primary};
-    color : ${({theme})=>theme.third};
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.third};
   }
 
-  @media screen and(max-width : 768px) {    
-    font-size : 0.8rem;
+  @media screen and (max-width: 768px) {    
+    font-size: 0.8rem;
   }
 `;
 
@@ -137,7 +137,7 @@ const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: ${({ theme }) => theme.card_light + 99};
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
@@ -161,33 +161,33 @@ const MobileLink = styled.a`
 `;
 
 const MobileButtonContainer = styled.div`
-    display : flex;
-    justify-content : start;
-    align-items : center;
-    width : 80%;
-    height : 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 100%;
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
 `;
 
 const MobileButton = styled.a`
-    border : 1.8px solid ${({theme})=>theme.primary};
-    background-color : ${({theme})=>theme.primary};
-    color : ${({theme})=>theme.white};
-    text-decoration : none;
-    border-radius : 20px;
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    padding : 6px 20px;
-    font-size : 1rem;
-    font-weight : 500;
-    cursor : pointer;
-    height : 60%;
-    margin-right : 0.75rem;
+    border: 1.8px solid ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 60%;
+    margin-right: 0.75rem;
 
-    @media screen and(max-width : 768px) {    
-    font-size : 0.8rem;
+    @media screen and (max-width: 768px) {    
+    font-size: 0.8rem;
     }
 `;
 
@@ -204,7 +204,6 @@ const Navbar = () => {
           window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-      
 
     return (
         <Nav>
@@ -214,7 +213,7 @@ const Navbar = () => {
                 </NavLogo>
 
                 <MobileIcon>
-                    <FaBars onClick={()=>{setIsOpen(!isOpen)}}></FaBars>
+                    <FaBars onClick={() => { setIsOpen(!isOpen) }}></FaBars>
                 </MobileIcon>
 
                 <NavItems>  
@@ -230,28 +229,22 @@ const Navbar = () => {
                     <Button href="https://www.linkedin.com/in/kancherla-venkat-sai/" target="blank">LinkedIn</Button>
                 </ButtonContainer>
 
-                {
-                    isOpen && 
-                            <MobileMenu isOpen={isOpen}>
-                                <MobileLink href="#about" onClick={()=>setIsOpen(!isOpen)}>About</MobileLink>
-                                <MobileLink href="#skills" onClick={()=>setIsOpen(!isOpen)}>Skills</MobileLink>
-                                <MobileLink href="#projects" onClick={()=>setIsOpen(!isOpen)}>Projects</MobileLink>
-                                <MobileLink href="#education" onClick={()=>setIsOpen(!isOpen)}>Education</MobileLink>
-                                <MobileButtonContainer isOpen={isOpen}>
-                                    <MobileButton href="https://drive.google.com/file/d/1S0U-9eWkg6DhXl_Atlytp2PHUPBwH6BF/view?usp=sharing" target='blank'>Resume</MobileButton>
-                                    <MobileButton href="https://github.com/VENKATSAI643" target="blank">Github</MobileButton>
-                                    <MobileButton href="https://www.linkedin.com/in/kancherla-venkat-sai/" target="blank">LinkedIn</MobileButton>
-                                </MobileButtonContainer>
-                            </MobileMenu>
-                        
-                        
+                {isOpen && 
+                    <MobileMenu isOpen={isOpen}>
+                        <MobileLink href="#about" onClick={() => setIsOpen(!isOpen)}>About</MobileLink>
+                        <MobileLink href="#skills" onClick={() => setIsOpen(!isOpen)}>Skills</MobileLink>
+                        <MobileLink href="#projects" onClick={() => setIsOpen(!isOpen)}>Projects</MobileLink>
+                        <MobileLink href="#education" onClick={() => setIsOpen(!isOpen)}>Education</MobileLink>
+                        <MobileButtonContainer isOpen={isOpen}>
+                            <MobileButton href="https://drive.google.com/file/d/1S0U-9eWkg6DhXl_Atlytp2PHUPBwH6BF/view?usp=sharing" target='blank'>Resume</MobileButton>
+                            <MobileButton href="https://github.com/VENKATSAI643" target="blank">Github</MobileButton>
+                            <MobileButton href="https://www.linkedin.com/in/kancherla-venkat-sai/" target="blank">LinkedIn</MobileButton>
+                        </MobileButtonContainer>
+                    </MobileMenu>
                 }
-
             </NavContainer>
-
-
         </Nav>
-    )
+    );
 }
 
 export default Navbar;
